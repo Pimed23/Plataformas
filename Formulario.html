@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+        <script src="Formulario.js" type="text/javascript">
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+        <link href="Formulario.css" rel=stylesheet>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form_top">
+                <h2>Formulario<span>Registro</span></h2>
+            </div>
+            <form name="n_form" class="form_reg" method="POST" onsubmit="return validar()">
+                <div>
+                    <label for="nombre">Nombre: </label>
+                    <input class="input" type="text" id="nombre" onblur="revisarTexto( this )" placeholder="&#128100; Ingrese su nombre"> 
+                </div>
+                <div>
+                    <label for="apellido">Apellido: </label>
+                    <input class="input" type="text" id="apellido" onblur="revisarTexto( this )" placeholder="&#128100; Ingrese su apellido">
+                </div>
+                <div>
+                    <label>Sexo: <br></label>
+                        <input class="radio" type="radio" name="sexo" value="hombre">Hombre
+                        <input class="radio" type="radio" name="sexo" value="mujer">Mujer                    
+                        <input class="radio" type="radio" name="sexo" value="otro">Otro
+                </div>
+                <br>
+                <div>
+                    <label for="mail">Email: </label>
+                    <input class="input" type="email" id="mail" onblur="revisarEmail( this )" onblur="revisarTexto( this )" placeholder="&#9993; Ingrese su email">
+                </div>
+                <label>Departamento:</label>
+                <div class="box">
+                    <select name="localidad" size="1">
+                        <option value="0">Seleccione un departamento</option>
+                        <option value="Aqp">Arequipa</option>
+                        <option value="Csc">Cusco</option>
+                        <option value="Lim">Lima</option>
+                        <option value="Pun">Puno</option>
+                        <option value="Tcn">Tacna</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="descripcion">Descripcion:</label>
+                    <textarea name="comentarios" id="descripcion" rows="5" cols="30" onblur="revisarDescripcion( this )" placeholder="Escriba su descripcion"></textarea>
+                </div>
+                <br>
+                <div class="checkbox">
+                    <input class="checkbox" type="checkbox" name="check1" value="0">Deseo recibir informacion sobre novedades y ofertas.<br>
+                    <input class="checkbox" type="checkbox" name="check2" value="0">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre proteccion de datos.
+                </div>
+                <div class="btn_form">
+                    <input class="btn_reset" type="reset" value="Limpiar">
+                    <input class="btn_submit" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
