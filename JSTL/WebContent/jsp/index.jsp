@@ -18,16 +18,4 @@
 	<c:out value="${email}"></c:out><br>
 	Departamento:
 	<c:out value="${localidad}"></c:out><br>
-	Descripcion:
-	<c:out value="${descripcion}"></c:out><br>
-	Acepto recibir informacion = 
-	<c:out value="${check1}"></c:out><br>
-	Acepto terminos y condiciones = 
-	<c:out value="${check2}"></c:out><br>
-	
-	
-	
-	
-	
-</body>
 </html>
