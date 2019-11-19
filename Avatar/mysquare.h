@@ -12,7 +12,6 @@ class mySquare : public QGraphicsItem {
         QRectF boundingRect() const;
         void paint( QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget );
 
-        void cosaQueHace( QPainter *painter );
         bool Pressed;
 
     protected:

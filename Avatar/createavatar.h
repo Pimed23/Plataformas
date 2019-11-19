@@ -19,7 +19,6 @@ signals:
 
 private slots:
     void on_backPush_clicked();
-
     void on_savePush_clicked();
 
 private:

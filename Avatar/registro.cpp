@@ -28,15 +28,12 @@ void registro::on_registerPush_clicked() {
     QString c = ui -> correoContaint -> text();
 
     char s;
-    if( ui -> hombreRadio -> isCheckable())
-        s = 'H';
-    else
-        s = ' ';
-    if( ui -> mujerRadio -> isCheckable())
+    if( ui -> hombreRadio -> isChecked())
+        s = 'M';
+    else if( ui -> mujerRadio -> isChecked())
         s = 'F';
     else
         s = ' ';
-
     int e = ui -> edadContaint -> text().toInt();
     int d = ui -> dniContaint -> text().toInt();
 

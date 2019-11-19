@@ -16,6 +16,9 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    avatar.cpp \
+    avatarsprites.cpp \
+    buttonsprites.cpp \
     createavatar.cpp \
     main.cpp \
     login.cpp \
@@ -23,18 +26,19 @@ SOURCES += \
     persona.cpp \
     profile.cpp \
     registeravatar.cpp \
-    registro.cpp \
-    womanavatar.cpp
+    registro.cpp
 
 HEADERS += \
+    avatar.h \
+    avatarsprites.h \
+    buttonsprites.h \
     createavatar.h \
     login.h \
     mysquare.h \
     persona.h \
     profile.h \
     registeravatar.h \
-    registro.h \
-    womanavatar.h
+    registro.h
 
 FORMS += \
     createavatar.ui \
