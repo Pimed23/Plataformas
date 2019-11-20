@@ -41,6 +41,7 @@ private:
     QGraphicsScene *scene;
     avatarSprites *avatS;
     buttonSprites *buttS;
+
     static size_t headCount;
     static size_t bodyCount;
     static size_t legsCount;

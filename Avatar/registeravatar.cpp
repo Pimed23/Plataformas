@@ -11,6 +11,7 @@ registerAvatar::registerAvatar(QWidget *parent) :
 
     if( pers -> getSexo() == 'F' ) {
         avatS = new avatarSprites('F');
+        buttS = new buttonSprites('F');
         QPixmap avatar_mujer("/home/pimed/Avatar/woman/avatar_mujer.jpg");
         scene -> addPixmap( avatar_mujer ); // 86, 14, 85, 53
 
@@ -50,7 +51,7 @@ void registerAvatar::on_headNextPush_clicked() {
     square = new mySquare( 86, 14, 85, 53, dirAvat );
     scene -> addItem( square );
 
-    QString dirButt = buttS -> getButtonHead( 0 ); // NO FUNCIONA VER EN CASA
+    QString dirButt = buttS -> getButtonHead( headCount ); // ERROR
     qDebug() << dirButt;
     QPixmap head( dirButt );
     ui -> headLabel -> setPixmap( head );

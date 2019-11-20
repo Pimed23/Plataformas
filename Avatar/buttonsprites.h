@@ -14,6 +14,7 @@ class buttonSprites {
         QString getButtonHands( size_t i );
         QString getButtonFoots( size_t i );
         QString getButtonAcc( size_t i );
+
     private:
         vector<QString> head;
         vector<QString> body;
